@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::selection {
+  background-color: #4f46e5;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Design tokens */
+:root {
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Colors */
+  --color-bg: #fafafa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-hover: #F7F7F7;
+  --color-bg-active: #f0f0f0;
+  --color-border: #ececec;
+  --color-border-strong: #d4d4d4;
+  --color-border-focus: #4f46e5;
+  --color-text-primary: #111;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #737373;
+  --color-text-muted: #a3a3a3;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+  --color-accent-light: #eef2ff;
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-error: #dc2626;
+
+  /* Category accent colors for node types */
+  --color-category-input: #16a34a;
+  --color-category-output: #2563eb;
+  --color-category-processing: #7c3aed;
+  --color-category-logic: #ea580c;
+  --color-category-integration: #0891b2;
+  --color-category-control: #0d9488;
+  --color-category-delay: #0d9488;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(79, 70, 229, 0.15);
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-normal: 150ms ease;
+  --transition-slow: 180ms ease;
+
+  /* Typography scale */
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  --font-size-h1: 24px;
+  --font-size-h2: 20px;
+  --font-size-h3: 16px;
+  --font-size-node-title: 18px;
+  --font-size-body: 14px;
+  --font-size-sm: 13px;
+  --font-size-xs: 10px;
+  --font-size-label: 11px;
+  --font-size-helper: 10px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Typography semantic colors */
+  --color-text-node-title: #171717;
+  --color-text-description: #9A9A9A;
+  --color-text-field-label: #7A7A7A;
+  --color-text-toolbar-category: #8C8C8C;
+  --color-text-toolbar-node: #222;
+
+  --line-height-heading: 1.3;
+  --line-height-body: 1.5;
+  --line-height-label: 1.4;
+  --line-height-mono: 1.5;
+
+  /* Layout */
+  --toolbar-width: 220px;
+  --canvas-gap: 16px;
+}
