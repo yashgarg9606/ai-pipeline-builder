@@ -17,25 +17,34 @@ export const WelcomeScreen = ({ onContinue }) => {
 
   return (
     <div className={`welcome ${leaving ? 'welcome--leaving' : ''}`}>
-      <div className="welcome-inner">
+      <div className="welcome-card">
+        <span className="welcome-accent" aria-hidden="true" />
         <h1 className="welcome-title">Pipeline Builder</h1>
-        <p className="welcome-subtitle">Technical Assessment Submission for VectorShift</p>
+        <p className="welcome-subtitle">Technical Assessment</p>
+        <p className="welcome-subtitle-company">VectorShift — Frontend Engineering</p>
         <p className="welcome-description">
-          A React Flow based workflow editor demonstrating reusable node abstraction, dynamic handles, and backend DAG validation.
+          A configurable React Flow workflow editor showcasing reusable node abstractions,
+          dynamic handles, and backend DAG validation.
         </p>
-        <div className="welcome-card">
-          {features.map((feature) => (
-            <div key={feature} className="welcome-feature">
-              <span className="welcome-check">✓</span>
-              <span>{feature}</span>
-            </div>
-          ))}
+        <div className="welcome-features">
+          <span className="welcome-features-label">Features</span>
+          <div className="welcome-features-card">
+            {features.map((feature) => (
+              <div key={feature} className="welcome-feature">
+                <span className="welcome-check">✓</span>
+                <span>{feature}</span>
+              </div>
+            ))}
+          </div>
         </div>
         <button type="button" className="welcome-btn" onClick={handleContinue}>
-          Continue to Builder →
+          Continue →
         </button>
+        <footer className="welcome-footer">
+          <span className="welcome-credit">Built by Yash Garg</span>
+          <span className="welcome-stack">React • React Flow • FastAPI</span>
+        </footer>
       </div>
-      <span className="welcome-credit">Yash Garg • July 2026</span>
     </div>
   );
 };
