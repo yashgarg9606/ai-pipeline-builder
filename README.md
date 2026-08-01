@@ -4,6 +4,12 @@ A configurable workflow editor built with **React Flow** and **FastAPI**, featur
 
 ---
 
+## 📌 Project Context
+
+This project was developed as part of a frontend engineering technical assessment. Beyond completing the required functionality, I focused on designing a reusable node abstraction, improving maintainability through a configuration-driven architecture, and delivering a polished, consistent user experience.
+
+---
+
 ## ✨ Features
 
 - Configuration-driven node architecture
